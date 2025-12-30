@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Penally Mews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Penally Mews</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="prices.html">Prices & Availability</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  Escape to Penally Mews
+</div>
+
+<section>
+  <p>
+    Escape to <strong>Penally Mews</strong>, a charming Welsh cottage in St Dogmaels, near Cardigan.
+    Surrounded by history, coastline, and natural beauty, this is an ideal retreat for couples, families,
+    and outdoor lovers alike.
+  </p>
+  <p>
+    With spacious living areas, flexible bedrooms, and plenty of outdoor space, Penally Mews is the perfect base
+    for exploring West Wales.
+  </p>
+  <p style="text-align:center; margin-top:20px;">
+    <a href="YOUR_SYKES_LINK_HERE" target="_blank" class="button">Book Now & Check Availability</a>
+  </p>
+</section>
+
+<section>
+  <h2>Gallery Preview</h2>
+  <div class="mini-gallery">
+    <a href="gallery.html"><img src="images/estuary1.jpg" alt="Estuary"></a>
+    <a href="gallery.html"><img src="images/master1.jpg" alt="Master1"></a>
+    <a href="gallery.html"><img src="images/fbr1.jpg" alt="Bedroom"></a>
+    <a href="gallery.html"><img src="images/smalldouble1.jpg" alt="Bedroom"></a>
+  </div>
+</section>
+
+</body>
+</html>
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #f4f4f2;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+header {
+  background: #3f5f4f;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("images/poppitsands2.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #3f5f4f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background: #2c3e35;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-prices {
+  background: url("images/penallywalk3.jpg") center/cover no-repeat;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    padding: 10px;
+    background-color: #4f6f5f;
+    border-radius: 6px;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+  }
+
+  .gallery-row img {
+    max-width: 100%;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
